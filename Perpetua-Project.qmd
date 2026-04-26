@@ -1,0 +1,68 @@
+---
+title: "Trends in NYC DHS Shelter Populations "
+author: "Perpetua Senatus"
+format: html
+editor: visual
+embed-resources: true
+---
+
+# #Chapter Title
+
+## ##Introduction
+
+Explain why you chose this topic, and the questions you are interested in studying. Provide context for readers who are not familiar with the topic.
+
+(suggested length: one paragraph)
+
+## ##Data
+
+### ###Description
+
+Describe how the data are collected and by whom. Describe the format of the data, the frequency of updates, dimensions, and any other relevant information. Note any issues / problems with the data, either known or that you discover.  *Carefully document your sources with links to the precise data sources that you used.*
+
+(suggested length: one paragraph)
+
+Department of Homeless Services (DHS) –\> provider
+
+Data updated daily
+
+[Source Link](https://data.cityofnewyork.us/Social-Services/DHS-Daily-Report/k46n-sa2m/about_data)
+
+### ###Missing value analysis
+
+Describe any patterns you discover in missing values. If no values are missing, a graph should still be included showing that.
+
+(suggested: 1-2 graphs plus commentary)
+
+## ##Results
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+df <- read_csv("https://data.cityofnewyork.us/resource/k46n-sa2m.csv")
+
+head(df)
+
+```
+
+```{r}
+
+```
+
+### ###Question or Topic 1 
+
+# 
+
+### ###Question or Topic 2
+
+### ###Question or Topic 3
+
+Provide a short summary of the most revealing findings of your analysis. Take extra care to clean up your graphs, ensuring that best practices for presentation are followed, as described in the audience ready style section below.
+
+Your project should contain 5-10 graphs. Quality is rewarded over quantity.
+
+## ##Conclusion 
+
+Discuss: main takeaways of your exploration, limitations, future directions, lessons learned.
+
+(suggested length: one paragraph)
